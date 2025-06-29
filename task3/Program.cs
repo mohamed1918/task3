@@ -262,19 +262,24 @@ namespace task3
             #endregion
 
             #region Q19
-            int num = int.Parse(Console.ReadLine());
-            for (int i = 0; i < num; i++) 
-            {
-                for (int j = 0; j < num; j++)
-                {
+            //int num = int.Parse(Console.ReadLine());
+            //for (int i = 0; i < num; i++) 
+            //{
+            //    for (int j = 0; j < num; j++)
+            //    {
 
-                      if (i == j)
-                           Console.Write("1 ");
-                      else
-                           Console.Write("0 ");
-                }
-                Console.WriteLine();
-            }
+            //          if (i == j)
+            //               Console.Write("1 ");
+            //          else
+            //               Console.Write("0 ");
+            //    }
+            //    Console.WriteLine();
+            //}
+            #endregion
+
+            #region Q20
+            int[] arr = [1, 2, 3, 4, 5];
+            Console.WriteLine($"the sum of the array is = {arr.Sum()} "  );
             #endregion
         }
 
