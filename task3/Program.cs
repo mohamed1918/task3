@@ -225,23 +225,40 @@ namespace task3
             #endregion
 
             #region Q17
-            double x1 = double.Parse(Console.ReadLine());
-            double y1 = double.Parse(Console.ReadLine());
-            double x2 = double.Parse(Console.ReadLine());
-            double y2 = double.Parse(Console.ReadLine());
-            double x3 = double.Parse(Console.ReadLine());
-            double y3 = double.Parse(Console.ReadLine());
-            
-            double slope1 = (y2 - y1) / (x2 - x1);
-            double slope2 = (y3 - y2) / (x3 - x2);
-            if (slope1 == slope2)
-            {
-                Console.WriteLine("Points are on the same line");
-            }
-            else 
-            { 
-                Console.WriteLine("Points are not on the same line");
-            }
+            //double x1 = double.Parse(Console.ReadLine());
+            //double y1 = double.Parse(Console.ReadLine());
+            //double x2 = double.Parse(Console.ReadLine());
+            //double y2 = double.Parse(Console.ReadLine());
+            //double x3 = double.Parse(Console.ReadLine());
+            //double y3 = double.Parse(Console.ReadLine());
+
+            //double slope1 = (y2 - y1) / (x2 - x1);
+            //double slope2 = (y3 - y2) / (x3 - x2);
+            //if (slope1 == slope2)
+            //{
+            //    Console.WriteLine("Points are on the same line");
+            //}
+            //else 
+            //{ 
+            //    Console.WriteLine("Points are not on the same line");
+            //}
+            #endregion
+
+            #region Q18
+            ////double.TryParse(Console.ReadLine(), out double t);
+            ////Console.WriteLine(t < 3 ? "Highly efficient" : t < 4 ? "Increase speed" : t < 5 ? "Training required" : "Leave company");
+
+            //double hours = double.Parse(Console.ReadLine());
+
+            //if (hours >= 2 && hours < 3)
+            //    Console.WriteLine("Highly efficient");
+            //else if (hours >= 3 && hours < 4)
+            //    Console.WriteLine("Increase speed");
+            //else if (hours >= 4 && hours < 5)
+            //    Console.WriteLine("Training required");
+            //else if (hours >= 5)
+            //    Console.WriteLine("Leave the company");
+
             #endregion
         }
 
