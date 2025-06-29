@@ -278,8 +278,28 @@ namespace task3
             #endregion
 
             #region Q20
-            int[] arr = [1, 2, 3, 4, 5];
-            Console.WriteLine($"the sum of the array is = {arr.Sum()} "  );
+            //int[] arr = [1, 2, 3, 4, 5];
+            //Console.WriteLine($"the sum of the array is = {arr.Sum()} "  );
+            #endregion
+
+            #region Q21
+            int[] arr1 = { 1, 3, 5, 7, 9 };
+            int[] arr2 = { 2, 4, 6, 8, 10 };
+
+            int[] merged = new int[arr1.Length + arr2.Length];
+
+            for (int i = 0; i < arr1.Length; i++)
+                merged[i] = arr1[i];
+
+            for (int i = 0; i < arr2.Length; i++)
+                merged[i + arr1.Length] = arr2[i];
+
+            Array.Sort(merged);
+
+            Console.WriteLine("Merged Sorted Array:");
+            for (int i = 0; i < merged.Length; i++)
+                Console.Write(merged[i] + " ");
+
             #endregion
         }
 
