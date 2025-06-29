@@ -46,18 +46,30 @@
             #endregion
 
             #region Q4
-            Console.WriteLine("Enter a number : ");
-            int num = int.Parse(Console.ReadLine());
-            if (num % 2 == 0)
+            //Console.WriteLine("Enter a number : ");
+            //int num = int.Parse(Console.ReadLine());
+            //if (num % 2 == 0)
+            //{
+            //    Console.WriteLine("Number is even");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Number is odd");
+            //}
+            #endregion
+
+            #region Q5
+            Console.WriteLine("Enter a character : ");
+            char ch = char.Parse(Console.ReadLine().ToLower());
+            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
             {
-                Console.WriteLine("Number is even");
+                Console.WriteLine("Character is a vowel");
             }
             else
             {
-                Console.WriteLine("Number is odd");
+                Console.WriteLine("Character is a consonant");
             }
             #endregion
-
         }
     }
 }
