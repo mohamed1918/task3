@@ -143,32 +143,39 @@
             #endregion
 
             #region Q12
-            
-            double num1 = double.Parse(Console.ReadLine());
-            double num2 = double.Parse(Console.ReadLine());
-            Console.WriteLine("Enter an operator (+, -, *, /): ");
-            char op = char.Parse(Console.ReadLine());
-            switch (op) 
-            { 
-                case '+':
-                    Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
-                    break;
-                case '-':
-                    Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
-                    break;
-                case '*':
-                    Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
-                    break;
-                case '/':
-                    if (num2 != 0)
-                        Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
-                    else
-                        Console.WriteLine("Cannot divide by zero.");
-                    break;
-                default:
-                    Console.WriteLine("Invalid operator.");
-                    break;
-            }
+            //double num1 = double.Parse(Console.ReadLine());
+            //double num2 = double.Parse(Console.ReadLine());
+            //Console.WriteLine("Enter an operator (+, -, *, /): ");
+            //char op = char.Parse(Console.ReadLine());
+            //switch (op) 
+            //{ 
+            //    case '+':
+            //        Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
+            //        break;
+            //    case '-':
+            //        Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
+            //        break;
+            //    case '*':
+            //        Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
+            //        break;
+            //    case '/':
+            //        if (num2 != 0)
+            //            Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
+            //        else
+            //            Console.WriteLine("Cannot divide by zero.");
+            //        break;
+            //    default:
+            //        Console.WriteLine("Invalid operator.");
+            //        break;
+            //}
+            #endregion
+
+            #region Q13
+            Console.WriteLine("Enter a string : ");
+            string str = Console.ReadLine();
+            char[] arr = str.ToCharArray();
+            Array.Reverse(arr);
+            Console.WriteLine("Reversed string: " + new string(arr));
             #endregion
         }
     }
