@@ -303,33 +303,51 @@ namespace task3
             #endregion
 
             #region Q22
-            int[] arr = { 1, 2, 2, 3, 4, 4, 4, 5 };
+            //int[] arr = { 1, 2, 2, 3, 4, 4, 4, 5 };
 
-            for (int i = 0; i < arr.Length; i++)
+            //for (int i = 0; i < arr.Length; i++)
+            //{
+            //    int count = 0;
+            //    bool alreadyCounted = false;
+
+            //    for (int k = 0; k < i; k++)
+            //    {
+            //        if (arr[i] == arr[k])
+            //        {
+            //            alreadyCounted = true;
+            //            break;
+            //        }
+            //    }
+
+            //    if (alreadyCounted)
+            //        continue;
+
+            //    for (int j = 0; j < arr.Length; j++)
+            //    {
+            //        if (arr[i] == arr[j])
+            //            count++;
+            //    }
+
+            //    Console.WriteLine(arr[i] + " occurs " + count + " times");
+            //}
+
+            #endregion
+
+            #region Q23
+            int[] arr = { 10, 5, 7, 20, 3, 15 };
+
+            int max = arr[0];
+            int min = arr[0];
+            for (int i = 1; i < arr.Length; i++)
             {
-                int count = 0;
-                bool alreadyCounted = false;
-
-                for (int k = 0; k < i; k++)
-                {
-                    if (arr[i] == arr[k])
-                    {
-                        alreadyCounted = true;
-                        break;
-                    }
-                }
-
-                if (alreadyCounted)
-                    continue;
-
-                for (int j = 0; j < arr.Length; j++)
-                {
-                    if (arr[i] == arr[j])
-                        count++;
-                }
-
-                Console.WriteLine(arr[i] + " occurs " + count + " times");
+                if (arr[i] > max)
+                    max = arr[i];
+                if (arr[i] < min)
+                    min = arr[i];
             }
+            Console.WriteLine($"Max number = {max}");
+            Console.WriteLine($"Min number = {min}");
+
 
             #endregion
 
