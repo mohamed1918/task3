@@ -1,4 +1,6 @@
-﻿namespace task3
+﻿using System.IO.Pipelines;
+
+namespace task3
 {
     internal class Program
     {
@@ -179,17 +181,39 @@
             #endregion
 
             #region Q14
-            Console.WriteLine("Enter a number : ");
-            int num = int.Parse(Console.ReadLine());
-            int reverse = 0;
-            while (num > 0)
+            //Console.WriteLine("Enter a number : ");
+            //int num = int.Parse(Console.ReadLine());
+            //int reverse = 0;
+            //while (num > 0)
+            //{
+            //    int digit = num % 10;
+            //    reverse = reverse * 10 + digit;
+            //    num /= 10;
+            //}
+            //Console.WriteLine("Reversed number: " + reverse);
+            #endregion
+
+            #region Q15
+            Console.WriteLine("Test Data : ");
+            Console.WriteLine("Input a satating number : ");
+            int start = int.Parse(Console.ReadLine());
+            Console.WriteLine("Input a ending number : ");
+            int end = int.Parse(Console.ReadLine());
+            for (int i = start; i <= end; i++)
             {
-                int digit = num % 10;
-                reverse = reverse * 10 + digit;
-                num /= 10;
+                bool prime = i > 1;
+                for (int j = 2; j * j <= i; j++)
+                    if (i % j == 0)
+                    {
+                        prime = false;
+                        break;
+                    }
+                if (prime) Console.Write($"{i} ");
             }
-            Console.WriteLine("Reversed number: " + reverse);
+
             #endregion
         }
+
     }
+    
 }
