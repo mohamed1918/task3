@@ -283,26 +283,57 @@ namespace task3
             #endregion
 
             #region Q21
-            int[] arr1 = { 1, 3, 5, 7, 9 };
-            int[] arr2 = { 2, 4, 6, 8, 10 };
+            //int[] arr1 = { 1, 3, 5, 7, 9 };
+            //int[] arr2 = { 2, 4, 6, 8, 10 };
 
-            int[] merged = new int[arr1.Length + arr2.Length];
+            //int[] merged = new int[arr1.Length + arr2.Length];
 
-            for (int i = 0; i < arr1.Length; i++)
-                merged[i] = arr1[i];
+            //for (int i = 0; i < arr1.Length; i++)
+            //    merged[i] = arr1[i];
 
-            for (int i = 0; i < arr2.Length; i++)
-                merged[i + arr1.Length] = arr2[i];
+            //for (int i = 0; i < arr2.Length; i++)
+            //    merged[i + arr1.Length] = arr2[i];
 
-            Array.Sort(merged);
+            //Array.Sort(merged);
 
-            Console.WriteLine("Merged Sorted Array:");
-            for (int i = 0; i < merged.Length; i++)
-                Console.Write(merged[i] + " ");
+            //Console.WriteLine("Merged Sorted Array:");
+            //for (int i = 0; i < merged.Length; i++)
+            //    Console.Write(merged[i] + " ");
 
             #endregion
+
+            #region Q22
+            int[] arr = { 1, 2, 2, 3, 4, 4, 4, 5 };
+
+            for (int i = 0; i < arr.Length; i++)
+            {
+                int count = 0;
+                bool alreadyCounted = false;
+
+                for (int k = 0; k < i; k++)
+                {
+                    if (arr[i] == arr[k])
+                    {
+                        alreadyCounted = true;
+                        break;
+                    }
+                }
+
+                if (alreadyCounted)
+                    continue;
+
+                for (int j = 0; j < arr.Length; j++)
+                {
+                    if (arr[i] == arr[j])
+                        count++;
+                }
+
+                Console.WriteLine(arr[i] + " occurs " + count + " times");
+            }
+
+            #endregion
+
         }
 
     }
-    
 }
