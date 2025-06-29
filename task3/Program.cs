@@ -72,13 +72,23 @@
             #endregion
 
             #region Q6
+            //Console.WriteLine("Enter a number : ");
+            //int num = int.Parse(Console.ReadLine());
+            //for (int i = 1; i < num; i++)
+            //{
+            //    Console.WriteLine($" numbers = {i}");
+            //}
+            #endregion
+
+            #region Q7
             Console.WriteLine("Enter a number : ");
             int num = int.Parse(Console.ReadLine());
-            for (int i = 1; i < num; i++)
+            for (int i = 1; i <= 12; i++)
             {
-                Console.WriteLine($" numbers = {i}");
+                Console.Write($"{num * i} ");
             }
             #endregion
+
         }
     }
 }
