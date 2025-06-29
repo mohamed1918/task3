@@ -260,6 +260,22 @@ namespace task3
             //    Console.WriteLine("Leave the company");
 
             #endregion
+
+            #region Q19
+            int num = int.Parse(Console.ReadLine());
+            for (int i = 0; i < num; i++) 
+            {
+                for (int j = 0; j < num; j++)
+                {
+
+                      if (i == j)
+                           Console.Write("1 ");
+                      else
+                           Console.Write("0 ");
+                }
+                Console.WriteLine();
+            }
+            #endregion
         }
 
     }
