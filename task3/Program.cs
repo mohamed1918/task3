@@ -130,16 +130,45 @@
             #endregion
 
             #region Q11
-            Console.Write("Enter month number: ");
-            int m = int.Parse(Console.ReadLine());
-            int days;
-            if (m == 2)
-                days = 28;
-            else if (m == 4 || m == 6 || m == 9 || m == 11)
-                days = 30;
-            else
-                days = 31;
-            Console.WriteLine($"Days in Month: {days}");
+            //Console.Write("Enter month number: ");
+            //int m = int.Parse(Console.ReadLine());
+            //int days;
+            //if (m == 2)
+            //    days = 28;
+            //else if (m == 4 || m == 6 || m == 9 || m == 11)
+            //    days = 30;
+            //else
+            //    days = 31;
+            //Console.WriteLine($"Days in Month: {days}");
+            #endregion
+
+            #region Q12
+            
+            double num1 = double.Parse(Console.ReadLine());
+            double num2 = double.Parse(Console.ReadLine());
+            Console.WriteLine("Enter an operator (+, -, *, /): ");
+            char op = char.Parse(Console.ReadLine());
+            switch (op) 
+            { 
+                case '+':
+                    Console.WriteLine($"{num1} + {num2} = {num1 + num2}");
+                    break;
+                case '-':
+                    Console.WriteLine($"{num1} - {num2} = {num1 - num2}");
+                    break;
+                case '*':
+                    Console.WriteLine($"{num1} * {num2} = {num1 * num2}");
+                    break;
+                case '/':
+                    if (num2 != 0)
+                        Console.WriteLine($"{num1} / {num2} = {num1 / num2}");
+                    else
+                        Console.WriteLine("Cannot divide by zero.");
+                    break;
+                default:
+                    Console.WriteLine("Invalid operator.");
+                    break;
+            }
             #endregion
         }
     }
