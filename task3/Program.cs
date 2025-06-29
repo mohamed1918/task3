@@ -17,6 +17,7 @@
             //    Console.WriteLine("No");
 
             #endregion
+
             #region Q2
             //Console.WriteLine("Enter a Number : ");
             //int num;
@@ -30,18 +31,31 @@
             //     Console.WriteLine("Number Is Negative");
             //}
             #endregion
-            #region Q3
-            Console.Write("Enter first number: ");
-            int n1 = int.Parse(Console.ReadLine());
-            Console.Write("Enter second number: ");
-            int n2 = int.Parse(Console.ReadLine());
-            Console.Write("Enter third number: ");
-            int n3 = int.Parse(Console.ReadLine());
-            int max = Math.Max(n1, Math.Max(n2, n3));
-            int min = Math.Min(n1, Math.Min(n2, n3));
-            Console.WriteLine($"Max number = {max}");
-            Console.WriteLine($"Min number = {min}");
 
+            #region Q3
+            //Console.Write("Enter first number: ");
+            //int n1 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter second number: ");
+            //int n2 = int.Parse(Console.ReadLine());
+            //Console.Write("Enter third number: ");
+            //int n3 = int.Parse(Console.ReadLine());
+            //int max = Math.Max(n1, Math.Max(n2, n3));
+            //int min = Math.Min(n1, Math.Min(n2, n3));
+            //Console.WriteLine($"Max number = {max}");
+            //Console.WriteLine($"Min number = {min}");
+            #endregion
+
+            #region Q4
+            Console.WriteLine("Enter a number : ");
+            int num = int.Parse(Console.ReadLine());
+            if (num % 2 == 0)
+            {
+                Console.WriteLine("Number is even");
+            }
+            else
+            {
+                Console.WriteLine("Number is odd");
+            }
             #endregion
 
         }
