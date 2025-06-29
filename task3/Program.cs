@@ -81,11 +81,23 @@
             #endregion
 
             #region Q7
+            //Console.WriteLine("Enter a number : ");
+            //int num = int.Parse(Console.ReadLine());
+            //for (int i = 1; i <= 12; i++)
+            //{
+            //    Console.Write($"{num * i} ");
+            //}
+            #endregion
+
+            #region Q8
             Console.WriteLine("Enter a number : ");
             int num = int.Parse(Console.ReadLine());
-            for (int i = 1; i <= 12; i++)
+            for(int i = 1; i <= num; i++)
             {
-                Console.Write($"{num * i} ");
+                if (i % 2 == 0)
+                {
+                    Console.Write($"{i} ");
+                }
             }
             #endregion
 
