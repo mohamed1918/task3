@@ -171,11 +171,24 @@
             #endregion
 
             #region Q13
-            Console.WriteLine("Enter a string : ");
-            string str = Console.ReadLine();
-            char[] arr = str.ToCharArray();
-            Array.Reverse(arr);
-            Console.WriteLine("Reversed string: " + new string(arr));
+            //Console.WriteLine("Enter a string : ");
+            //string str = Console.ReadLine();
+            //char[] arr = str.ToCharArray();
+            //Array.Reverse(arr);
+            //Console.WriteLine("Reversed string: " + new string(arr));
+            #endregion
+
+            #region Q14
+            Console.WriteLine("Enter a number : ");
+            int num = int.Parse(Console.ReadLine());
+            int reverse = 0;
+            while (num > 0)
+            {
+                int digit = num % 10;
+                reverse = reverse * 10 + digit;
+                num /= 10;
+            }
+            Console.WriteLine("Reversed number: " + reverse);
             #endregion
         }
     }
