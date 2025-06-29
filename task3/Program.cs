@@ -59,15 +59,24 @@
             #endregion
 
             #region Q5
-            Console.WriteLine("Enter a character : ");
-            char ch = char.Parse(Console.ReadLine().ToLower());
-            if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            //Console.WriteLine("Enter a character : ");
+            //char ch = char.Parse(Console.ReadLine().ToLower());
+            //if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u')
+            //{
+            //    Console.WriteLine("Character is a vowel");
+            //}
+            //else
+            //{
+            //    Console.WriteLine("Character is a consonant");
+            //}
+            #endregion
+
+            #region Q6
+            Console.WriteLine("Enter a number : ");
+            int num = int.Parse(Console.ReadLine());
+            for (int i = 1; i < num; i++)
             {
-                Console.WriteLine("Character is a vowel");
-            }
-            else
-            {
-                Console.WriteLine("Character is a consonant");
+                Console.WriteLine($" numbers = {i}");
             }
             #endregion
         }
