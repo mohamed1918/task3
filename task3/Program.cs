@@ -213,14 +213,34 @@ namespace task3
             #endregion
 
             #region Q16
-            Console.WriteLine("Enter a number : ");
-            int num = int.Parse(Console.ReadLine());
-            int binary ;
-            while (num > 0)
+            //Console.WriteLine("Enter a number : ");
+            //int num = int.Parse(Console.ReadLine());
+            //int binary ;
+            //while (num > 0)
+            //{
+            //    binary = num % 2;
+            //    Console.Write(binary);
+            //    num /= 2;
+            //}
+            #endregion
+
+            #region Q17
+            double x1 = double.Parse(Console.ReadLine());
+            double y1 = double.Parse(Console.ReadLine());
+            double x2 = double.Parse(Console.ReadLine());
+            double y2 = double.Parse(Console.ReadLine());
+            double x3 = double.Parse(Console.ReadLine());
+            double y3 = double.Parse(Console.ReadLine());
+            
+            double slope1 = (y2 - y1) / (x2 - x1);
+            double slope2 = (y3 - y2) / (x3 - x2);
+            if (slope1 == slope2)
             {
-                binary = num % 2;
-                Console.Write(binary);
-                num /= 2;
+                Console.WriteLine("Points are on the same line");
+            }
+            else 
+            { 
+                Console.WriteLine("Points are not on the same line");
             }
             #endregion
         }
