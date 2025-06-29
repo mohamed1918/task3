@@ -102,21 +102,32 @@
             #endregion
 
             #region Q9
-            Console.WriteLine("Enter a  first number : ");
-            Console.WriteLine("Enter a  second number : ");
-            int num1 = int.Parse(Console.ReadLine());
-            int num2 = int.Parse(Console.ReadLine());
-            int re = 1;
-            for (int i = 1; i <= num2; i++)
-            {
-                re *= num1;
-            }
-            Console.WriteLine($"The result of {num1} raised to the power of {num2} is: {re}");
-
-
-
+            //Console.WriteLine("Enter a  first number : ");
+            //Console.WriteLine("Enter a  second number : ");
+            //int num1 = int.Parse(Console.ReadLine());
+            //int num2 = int.Parse(Console.ReadLine());
+            //int re = 1;
+            //for (int i = 1; i <= num2; i++)
+            //{
+            //    re *= num1;
+            //}
+            //Console.WriteLine($"The result of {num1} raised to the power of {num2} is: {re}");
             #endregion
 
+            #region Q10
+            Console.WriteLine("Enter a five numbers : ");
+            int sum =0;
+            for(int i = 1; i <= 5; i++)
+            {
+                sum += int.Parse(Console.ReadLine()) ;
+
+            }
+            int avg = sum / 5;
+            Console.WriteLine($"The total of the five numbers is: {sum}");
+            Console.WriteLine($"The average of the five numbers is: {avg}");
+            Console.WriteLine($"The Percentage of the five numbers is: {avg}");
+
+            #endregion
         }
     }
 }
