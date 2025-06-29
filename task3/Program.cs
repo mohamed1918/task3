@@ -7,7 +7,7 @@
             #region Q1
             int num;
             Console.WriteLine("Enter a number : ");
-            bool number = int.TryParse(Console.ReadLine(), out  num);
+            bool isnumber = int.TryParse(Console.ReadLine(), out  num);
             if (num % 3 == 0 && num % 4 == 0)
             {
                 Console.WriteLine("yes");
