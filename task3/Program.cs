@@ -194,23 +194,34 @@ namespace task3
             #endregion
 
             #region Q15
-            Console.WriteLine("Test Data : ");
-            Console.WriteLine("Input a satating number : ");
-            int start = int.Parse(Console.ReadLine());
-            Console.WriteLine("Input a ending number : ");
-            int end = int.Parse(Console.ReadLine());
-            for (int i = start; i <= end; i++)
-            {
-                bool prime = i > 1;
-                for (int j = 2; j * j <= i; j++)
-                    if (i % j == 0)
-                    {
-                        prime = false;
-                        break;
-                    }
-                if (prime) Console.Write($"{i} ");
-            }
+            //Console.WriteLine("Test Data : ");
+            //Console.WriteLine("Input a satating number : ");
+            //int start = int.Parse(Console.ReadLine());
+            //Console.WriteLine("Input a ending number : ");
+            //int end = int.Parse(Console.ReadLine());
+            //for (int i = start; i <= end; i++)
+            //{
+            //    bool prime = i > 1;
+            //    for (int j = 2; j * j <= i; j++)
+            //        if (i % j == 0)
+            //        {
+            //            prime = false;
+            //            break;
+            //        }
+            //    if (prime) Console.Write($"{i} ");
+            //}
+            #endregion
 
+            #region Q16
+            Console.WriteLine("Enter a number : ");
+            int num = int.Parse(Console.ReadLine());
+            int binary ;
+            while (num > 0)
+            {
+                binary = num % 2;
+                Console.Write(binary);
+                num /= 2;
+            }
             #endregion
         }
 
