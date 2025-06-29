@@ -115,18 +115,31 @@
             #endregion
 
             #region Q10
-            Console.WriteLine("Enter a five numbers : ");
-            int sum =0;
-            for(int i = 1; i <= 5; i++)
-            {
-                sum += int.Parse(Console.ReadLine()) ;
+            //Console.WriteLine("Enter a five numbers : ");
+            //int sum =0;
+            //for(int i = 1; i <= 5; i++)
+            //{
+            //    sum += int.Parse(Console.ReadLine()) ;
 
-            }
-            int avg = sum / 5;
-            Console.WriteLine($"The total of the five numbers is: {sum}");
-            Console.WriteLine($"The average of the five numbers is: {avg}");
-            Console.WriteLine($"The Percentage of the five numbers is: {avg}");
+            //}
+            //int avg = sum / 5;
+            //Console.WriteLine($"The total of the five numbers is: {sum}");
+            //Console.WriteLine($"The average of the five numbers is: {avg}");
+            //Console.WriteLine($"The Percentage of the five numbers is: {avg}");
 
+            #endregion
+
+            #region Q11
+            Console.Write("Enter month number: ");
+            int m = int.Parse(Console.ReadLine());
+            int days;
+            if (m == 2)
+                days = 28;
+            else if (m == 4 || m == 6 || m == 9 || m == 11)
+                days = 30;
+            else
+                days = 31;
+            Console.WriteLine($"Days in Month: {days}");
             #endregion
         }
     }
