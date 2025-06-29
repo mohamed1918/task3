@@ -90,15 +90,31 @@
             #endregion
 
             #region Q8
-            Console.WriteLine("Enter a number : ");
-            int num = int.Parse(Console.ReadLine());
-            for(int i = 1; i <= num; i++)
+            //Console.WriteLine("Enter a number : ");
+            //int num = int.Parse(Console.ReadLine());
+            //for(int i = 1; i <= num; i++)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        Console.Write($"{i} ");
+            //    }
+            //}
+            #endregion
+
+            #region Q9
+            Console.WriteLine("Enter a  first number : ");
+            Console.WriteLine("Enter a  second number : ");
+            int num1 = int.Parse(Console.ReadLine());
+            int num2 = int.Parse(Console.ReadLine());
+            int re = 1;
+            for (int i = 1; i <= num2; i++)
             {
-                if (i % 2 == 0)
-                {
-                    Console.Write($"{i} ");
-                }
+                re *= num1;
             }
+            Console.WriteLine($"The result of {num1} raised to the power of {num2} is: {re}");
+
+
+
             #endregion
 
         }
